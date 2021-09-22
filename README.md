@@ -1,4 +1,5 @@
 # Homework-2
+## :) 
 
 Created a Portfolio page based on past portfolio work with links to my personal website and portfolio.
 
