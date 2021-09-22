@@ -12,4 +12,5 @@ Each segment in contact me section uses animated css hover features, as well as 
 
 Added a footer at the end with a link to my website for further reference.
 
-!["PhotoPortfolio"](/Users/nicoledodge/Homework-2/Homework-2/assets/images/Photo Portfolio.png)
+![PhotoPortfolio](/Users/nicoledodge/Homework-2/Homework-2/assets/images/Photo Portfolio image.jpg)
+![photoexample](/Users/nicoledodge/Homework-2/Homework-2/assets/images/Photo Portfolio image.jpg);
