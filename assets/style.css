@@ -47,7 +47,7 @@ footer {
   display:flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   background: rgba(129, 63, 120, 0.8);
   color: #fff;
@@ -83,8 +83,13 @@ a.pages:hover:before {
   justify-content: center;
   margin: 10px;
   flex-grow: 1;
+  opacity: 0.7;
   position: relative;
   text-align: center;
+}
+.card:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 .card-2 {
   display: flex;
@@ -92,16 +97,20 @@ a.pages:hover:before {
   padding: 0px;
   margin: 10px;
   width: 500px;
+  opacity: 0.7;
   flex: 0 4 200px;
   position: relative;
   text-align: center;
 }
+.card-2:hover {
+  opacity: 1;
+  cursor: pointer;
+}
 .row {
   display: flex;
-  flex-flow: row-reverse wrap;
+  flex-flow: row wrap;
   padding: 10px;
   width: 75vw;
-  flex-direction: row;
 }
 .row-2 {
   object-fit: fill;
@@ -128,10 +137,6 @@ a.pages:hover:before {
   color: #fff;
   width: 35%; /* Set the width of the positioned div */
 }
-.card{
-  position: relative;
-  display: inline-block; /* Make the width of box same as image */
-}
 .card .text{
   position: absolute;
   font-size: 30px;
@@ -147,11 +152,11 @@ a.pages:hover:before {
   color: #fff;
   width: 20%; /* Set the width of the positioned div */
 }
-.card-2{
+/* .card-2{
   position: relative;
   display: inline-block;
-  width: 500px; /* Make the width of box same as image */
-}
+  width: 500px; 
+} */
 .card-2 .text{
   position: absolute;
   font-size: 30px;
@@ -172,15 +177,36 @@ a.pages:hover:before {
   flex-direction: row-reverse;
   width: 25vw;
   color: rgba(129, 63, 120, 0.8);
-  font-size: 40px;
+  font-size: 50px;
+}
+.title-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 25vw;
+  color: rgba(129, 63, 120, 0.8);
+  font-size: 30px;
+  margin: 2px;
+  font-size: 50px;
+}
+.column.row {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+  width: 75vw;
 }
 .column {
   display: flex;
- flex-wrap: wrap;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
 }
 .column .title {
   display: flex;
   align-items: flex-start;
+}
+#about.column {
+  display: flex;
+  flex-direction: column;
 }
 #column {
   display: flex;
@@ -215,8 +241,14 @@ nav ul {
   opacity: 85%;
 }
 .vertical {
-  border-left: 3px solid rgba(129, 63, 120, 0.8);
-  height: 100px;
+  border-left: 4px solid rgba(129, 63, 120, 0.8);
+  height: 110px;
+  position:absolute;
+  left: 25%;
+}
+.vertical-p {
+  border-left: 4px solid rgba(129, 63, 120, 0.8);
+  height: 1200px;
   position:absolute;
   left: 25%;
 }
@@ -236,6 +268,7 @@ h3{
 }
 ul#horizontal-list {
 	min-width: 696px;
+  width: 60vw;
 	list-style: none;
 	padding-top: 20px;
   display: flex;
@@ -244,7 +277,6 @@ ul#horizontal-list {
 ul#horizontal-list li {
   display: inline;
 }
-
 a.list
 {
     position: relative;
