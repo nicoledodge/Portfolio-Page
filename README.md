@@ -11,3 +11,5 @@ Responsive laytout makes it easy to view on mobile and different desktop sizes, 
 Each segment in contact me section uses animated css hover features, as well as the images in the portfolio section.
 
 Added a footer at the end with a link to my website for further reference.
+
+!["PhotoPortfolio"](/Users/nicoledodge/Homework-2/Homework-2/assets/images/Photo Portfolio.png)

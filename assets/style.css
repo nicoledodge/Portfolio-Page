@@ -38,7 +38,7 @@ main {
   flex-direction: column;
 }
 header img {
-  width: 1500px;
+  width: 1440px;
   height: 400px;
   object-fit: cover;
 }
