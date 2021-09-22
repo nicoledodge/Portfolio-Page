@@ -15,5 +15,5 @@ Added a footer at the end with a link to my website for further reference.
 
 
 
-<img width="537" alt="photo portfolio" src="https://nicoledodge.github.io/Assignment-2/assets/images/Photo%20Portfolio%20image.jpg">
+<img width="537" alt="photo portfolio" src="https://github.com/nicoledodge/Assignment-2/blob/main/assets/images/photoportfolio.png">
 
