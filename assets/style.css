@@ -1,0 +1,322 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+header {
+  padding: 0px;
+  text-align: bottom right;
+  color: #fff;
+  min-width: 50vw;
+  background-color: white;
+display: flex;
+flex-wrap: wrap;
+}
+
+/* Use flex-direction to stack the navbar, sidebar, and body */
+nav {
+  display: flex;
+  background-color: rgba(129, 63, 120, 0.8);
+  justify-content: space-between;
+}
+
+nav a {
+  color: white;
+  padding: 2px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+ /* Make the sidebar stack below the body */
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+header img {
+  width: 1500px;
+  height: 400px;
+  object-fit: cover;
+}
+
+footer {
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+  text-align: center;
+  background: rgba(129, 63, 120, 0.8);
+  color: #fff;
+  list-style-type: none;
+}
+
+/* */
+
+a.pages
+{
+    position: relative;
+}
+a.pages::before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 2px;
+  bottom: -2px;
+  left: 15%;
+  background-color: white;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+}
+a.pages:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  flex: 0 0 400px;
+  justify-content: center;
+  margin: 10px;
+  flex-grow: 1;
+  position: relative;
+  text-align: center;
+}
+.card-2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 10px;
+  width: 500px;
+  flex: 0 4 200px;
+  position: relative;
+  text-align: center;
+}
+.row {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  padding: 10px;
+  width: 75vw;
+  flex-direction: row;
+}
+.row-2 {
+  object-fit: fill;
+  padding: 10px;
+  width: 75vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.box{
+  position: relative;
+  display: inline-block; /* Make the width of box same as image */
+}
+.box .subtitle{
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 50%;
+  right: 0;        
+  text-align: center;
+  top: 80%; /* Adjust this value to move the positioned div up and down */
+  background: rgba(129, 63, 120, 0.8);
+  font-family: Arial,sans-serif;
+  color: #fff;
+  width: 35%; /* Set the width of the positioned div */
+}
+.card{
+  position: relative;
+  display: inline-block; /* Make the width of box same as image */
+}
+.card .text{
+  position: absolute;
+  font-size: 30px;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 100%;        
+  align-items: center;
+  bottom: 18%;
+  top: 75%; /* Adjust this value to move the positioned div up and down */
+  background: rgba(129, 63, 120, 0.8);
+  font-family: Arial,sans-serif;
+  color: #fff;
+  width: 20%; /* Set the width of the positioned div */
+}
+.card-2{
+  position: relative;
+  display: inline-block;
+  width: 500px; /* Make the width of box same as image */
+}
+.card-2 .text{
+  position: absolute;
+  font-size: 30px;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 100%;        
+  text-align: center;
+  bottom: 15%;
+  top: 70%; /* Adjust this value to move the positioned div up and down */
+  background: rgba(129, 63, 120, 0.8);
+  font-family: Arial,sans-serif;
+  color: #fff;
+  width: 30%; /* Set the width of the positioned div */
+}
+.title {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 25vw;
+  color: rgba(129, 63, 120, 0.8);
+  font-size: 40px;
+}
+.column {
+  display: flex;
+ flex-wrap: wrap;
+}
+.column .title {
+  display: flex;
+  align-items: flex-start;
+}
+#column {
+  display: flex;
+}
+.subtitle {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  text-size-adjust: 20px;
+}
+.header-box {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(221, 182, 216, 0.8);
+  border: 10px black;
+  border-width: 10px;
+}
+.text {
+  color: rgba(94, 45, 87, 0.8);
+  font-size: 30px;
+}
+nav ul {
+  display: flex;
+  align-items: flex-end;
+  list-style: none;
+}
+.box{
+  opacity: 85%;
+}
+.vertical {
+  border-left: 3px solid rgba(129, 63, 120, 0.8);
+  height: 100px;
+  position:absolute;
+  left: 25%;
+}
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+  border-left: rgba(129, 63, 120, 0.8);
+  border-width: 2px;
+}
+a { 
+  text-decoration: none; 
+  color: rgba(129, 63, 120, 0.8);
+  font-size: larger;
+}
+h3{
+  width: 10vw;
+}
+ul#horizontal-list {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+ul#horizontal-list li {
+  display: inline;
+}
+
+a.list
+{
+    position: relative;
+}
+
+a.list:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(129, 63, 120, 0.8);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+a.list:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.card p {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgba(129, 63, 120, 0.8);
+}
+.card-2 img {
+  width:  500px;
+  height: 200px;
+  object-fit: cover;
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgba(129, 63, 120, 0.8);
+}
+
+a.website
+{
+    position: relative;
+    list-style-type: none;
+    color: rgba(68, 30, 63, 0.8);
+}
+a.website:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  list-style: none;
+  background-color: rgba(129, 63, 120, 0.8);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+a.website:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/* 
+What does the flex-direction property define?
+What is it doing here? 
+TODO: Write your answer here 
+*/
+/* @media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+} */
