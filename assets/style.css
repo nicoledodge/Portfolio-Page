@@ -76,7 +76,7 @@ a.pages:hover:before {
   transform: scaleX(1);
 }
 .card {
-  display: flex;
+  /*display: flex;*/
   flex-wrap: wrap;
   padding: 0px;
   flex: 0 0 400px;
@@ -139,13 +139,13 @@ a.pages:hover:before {
 }
 .card .text{
   position: absolute;
-  font-size: 30px;
+  font-size: 25px;
   z-index: 999;
   margin: 0 auto;
   left: 0;
   right: 100%;        
   align-items: center;
-  bottom: 18%;
+  /*bottom: 18%;*/
   top: 75%; /* Adjust this value to move the positioned div up and down */
   background: rgba(129, 63, 120, 0.8);
   font-family: Arial,sans-serif;
@@ -159,14 +159,14 @@ a.pages:hover:before {
 } */
 .card-2 .text{
   position: absolute;
-  font-size: 30px;
+  font-size: 17px;
   z-index: 999;
   margin: 0 auto;
   left: 0;
   right: 100%;        
   text-align: center;
-  bottom: 15%;
-  top: 70%; /* Adjust this value to move the positioned div up and down */
+  /*bottom: 15%;*/
+  top: 60%; /* Adjust this value to move the positioned div up and down */
   background: rgba(129, 63, 120, 0.8);
   font-family: Arial,sans-serif;
   color: #fff;
@@ -310,7 +310,7 @@ a.list:hover:before {
 }
 .card-2 img {
   width:  500px;
-  height: 200px;
+  /*height: 200px;*/
   object-fit: cover;
   border-style: solid;
   border-width: 4px;
