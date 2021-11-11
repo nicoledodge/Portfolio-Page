@@ -4,115 +4,124 @@
     <title>NikkiDodge</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="./assets/reset.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/style.css"/>
+
 </head>
 
-<nav>
-    <div class="header-box">
-        <div class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nikki Dodge Portfolio</div>
-    </div>
-    <ul>
-        <li><a class="pages" href="#about">About Me</a></li>
-        <li><a class="pages" href="#portfolio">Portfolio</a></li>
-        <li><a class="pages" href="#contact">Contact Me</a></li>
-        <li><a class="pages" href="https://github.com/nicoledodge/Portfolio-Page/blob/main/assets/images/Profile.pdf">Resume</a></li>
-    </ul>
-</nav>
 
 <body>
 
 <header>
-    <div class="box">
-        <img src="https://github.com/nicoledodge/Portfolio-Page/blob/main/assets/images/cloud-icloud-binary-code-wallpaper-preview.jpeg?raw=true" alt="raining ing binary">
-        <div class="subtitle">
-            <h1>Recent Work</h1>
-        </div>
-    </div>
+    <h3><img class="smallcardimage" src="https://avatars.githubusercontent.com/u/76898813?v=4"/> Nikki Dodge</h3>
+    <nav>
+        <a href="#aboutme" class="button">About Me</a>
+        <a href="#portfolio" class="button">Portfolio</a>
+        <a href="assets/images/Resume.pdf" target="_blank" class="button">Resume</a>
+        <a href="#contact" class="button">Contact</a>
+    </nav>
 </header>
+
+<section>
+    <div>
+        <img class="bannerimage" src="./assets/images/cloud-icloud-binary-code-wallpaper-preview.jpeg"/>
+        <p class="bannerdescription">Full Stack MERN Developer</p>
+    </div>
+</section>
 
 <!-- Body -->
 <main>
-    <div class="column">
-        <div id="about">
-            <h2 class="title-2">About&nbsp;&nbsp;</h2>
-            <h2 class="title-2">Me&nbsp;&nbsp;</h2>
-        </div>
-        <div class="vertical"></div>
-        <div class="row">Hey I’m Nicole! (some people call me Nikki)
 
-          I’m new to the world of web development but have been no stranger to technology. Expertised in DSLR camera processes and Adobe applications, my profession prior to computers involved Wedding & Festival Photography, as well as the team photographer for a Division I football team. I spend most of my time at festivals and traveling across different national parks and different countries! Always looking for a new adventure and not afraid to ask the question "why"?
+    <section class="page-section" id="about">
+        <h2 class="mainheader" id="aboutme">About Me</h2>
+        <div>
+            <p class="aboutmetext">Hey I’m Nicole! (some people call me Nikki)
+
+                I’m new to the world of web development but have been no stranger to technology. Expertised in DSLR camera processes and Adobe applications, my profession prior to computers involved Wedding & Festival Photography, as well as the team photographer for a Division I football team. I spend most of my time at festivals and traveling across different national parks and different countries! Always looking for a new adventure and not afraid to ask the question "why"?
+            </p>
         </div>
-    </div>
-    <div class="column">
-        <h2 class="title" id="portfolio">Portfolio&nbsp;&nbsp;</h2>
-        <div class="vertical-p"></div>
-        <div class="row">
-            <section class="card">
-                <div class="text">TravelBuddy App</div>
-                <a href="https://nicoledodge.github.io/Project1/">
-                    <img src="https://github.com/nicoledodge/Project1/blob/main/assets/images/TravelBuddy.gif?raw=true"
-                         alt="travel buddy app demo gif"/>
-                    <a href="https://github.com/nicoledodge/Project1">
-                        GitHub Repo Link
-                    </a>
+    </section>
+
+    <section class="page-section" id="portfolio">
+
+        <h2 class="mainheader" id="portfolio">Portfolio</h2>
+
+
+        <div>
+
+            <h2 class="labelheading">TravelBuddy App</h2>
+<!--            <p class="labeldescription">Front End API</p>-->
+            <a href="https://github.com/nicoledodge/Project1" target="_blank">
+                <img class="bigcardimage" src="https://github.com/nicoledodge/Project1/blob/main/assets/images/TravelBuddy.gif?raw=true"
+                     alt="travel buddy app demo gif"/>
+            </a>
+
+
+
+            <div class="portfoliocards">
+
+
+                <h3 class="labelheading">Express.gym</h3>
+<!--                <p class="labeldescription">Project 2 name</p>-->
+                <a href="https://express-gym.herokuapp.com/" target="_blank">
+                    <img class="smallcardimage" src="https://github.com/nicoledodge/express.gym/raw/main/public/images/express.gym%20demo.gif?raw=true" alt="express.gym demo gif"/>
                 </a>
-            </section>
-            <div class="row-2">
-                <section class="card-2">
-                    <div class="text">Turtle Trivia Quiz using Javascript</div>
-                    <a href="https://nicoledodge.github.io/Turtle-Trivia-Quiz/">
-                        <img src="https://github.com/nicoledodge/Turtle-Trivia-Quiz/blob/main/assets/images/turtle%20quiz%20demo.gif?raw=true"
-                             alt="Turtle trivia quiz gif"/>
-                        <a href="https://github.com/nicoledodge/Turtle-Trivia-Quiz">
-                            GitHub Repo Link
-                        </a>
-                    </a>
-                </section>
-                <section class="card-2">
-                    <div class="text">Day Planner using Local Storage</div>
-                    <a href="https://nicoledodge.github.io/Event-Day-Planner/">
-                        <img src="https://github.com/nicoledodge/Event-Day-Planner/blob/main/Develop/assets/images/planner%20demo.gif?raw=true"
-                             alt="Event day planner gif"/>
-                        <a href="https://github.com/nicoledodge/Event-Day-Planner">
-                            GitHub Repo Link
-                        </a>
-                    </a>
-                </section>
-                <section class="card-2">
-                    <div class="text">Weather Dashboard using Third Party APIs</div>
-                    <a href="https://nicoledodge.github.io/Weather-Dashboard/">
-                        <img src="https://github.com/nicoledodge/Weather-Dashboard/blob/main/assets/weather%20demo.gif?raw=true"
-                             alt="weather dashboard demo gif"/>
-                      <a href="https://github.com/nicoledodge/Weather-Dashboardr">
-                        GitHub Repo Link
-                      </a>
-                    </a>
-                </section>
-                <section class="card-2">
-                    <div class="text">PassWord Generator using Basic Javascript</div>
-                    <a href="https://nicoledodge.github.io/Random-Password-Generator/">
-                        <img src="https://github.com/nicoledodge/Random-Password-Generator/blob/main/assets/demo/Demo%20Password%20Gen.gif?raw=true"
-                             alt="password generator demo gif"/>
-                      <a href="https://github.com/nicoledodge/Random-Password-Generator">
-                        GitHub Repo Link
-                      </a>
-                    </a>
-                </section>
+
+
+
+                <h3 class="labelheading">Turtle Trivia Quiz</h3>
+<!--                <p class="labeldescription">Project 3 name</p>-->
+                <a href="https://nicoledodge.github.io/Turtle-Trivia-Quiz/" target="_blank">
+                    <img class="smallcardimage" src="https://github.com/nicoledodge/Turtle-Trivia-Quiz/blob/main/assets/images/turtle%20quiz%20demo.gif?raw=true"
+                         alt="Turtle trivia quiz gif"/>
+<!--                    <a href="https://github.com/nicoledodge/Turtle-Trivia-Quiz">-->
+<!--                        GitHub Repo Link-->
+<!--                    </a>-->
+                </a>
+
+
+
+
+                <h3 class="labelheading" id="project4label">Day Planner</h3>
+<!--                <p class="labeldescription" id="project4description">Project 4 name</p>-->
+                <a href=https://www.google.com target="_blank">
+                    <img class="smallcardimage" src="https://github.com/nicoledodge/Event-Day-Planner/blob/main/Develop/assets/images/planner%20demo.gif?raw=true"
+                         alt="Event day planner gif"/>
+<!--                    <a href="https://github.com/nicoledodge/Event-Day-Planner">-->
+<!--                        GitHub Repo Link-->
+<!--                    </a>-->
+                </a>
+
+
+
+                <h3 class="labelheading">Password Generator</h3>
+<!--                <p class="labeldescription">PassWord Generator</p>-->
+                <a href="https://nicoledodge.github.io/Random-Password-Generator/" target="_blank">
+                    <img class="smallcardimage" src="https://github.com/nicoledodge/Random-Password-Generator/blob/main/assets/demo/Demo%20Password%20Gen.gif?raw=true"
+                         alt="password generator demo gif"/>
+<!--                    <a href="https://github.com/nicoledodge/Random-Password-Generator">-->
+<!--                        GitHub Repo Link-->
+<!--                    </a>-->
+                </a>
+
             </div>
         </div>
-    </div>
-    <div class="column">
-        <h2 class="title" id="contact">Contact Me&nbsp;&nbsp;</h2>
-        <div class="vertical">
-            <ul id="horizontal-list">
-                <li><a class="list" href="#github">972-555-1234</a></li>
-                <li><a class="list" href="#Portfolio">Nicoleinfm@aol.com</a></li>
-                <li><a class="list" id="resume" href="https://github.com/nicoledodge">GitHub</a></li>
-                <li><a class="list" href="https://www.instagram.com/nikkidodgephotography/">Instagram</a></li>
-                <li><a class="list" href="https://www.linkedin.com/in/nicole-dodge-04879691/">LinkedIn</a></li>
-            </ul>
+
+    </section>
+
+    <section class="page-section" id="contact">
+        <h2 class="mainheader" id="contactheader">Contact</h2>
+        <div>
+            <address>
+                <a href="#tel:+5555555555" class="button">972-555-1234</a>
+                <a href="#mailto:Nicoleinfm@aol.com" class="button">Nicoleinfm@aol.com</a>
+                <a href="https://github.com/nicoledodge" class="button" target="_blank">GitHub</a>
+                <a href="https://www.instagram.com/nikkidodgephotography/" class="button" target="_blank">Instagram</a>
+                <a href="https://www.linkedin.com/in/nicole-dodge5/" class="button" target="_blank">LinkedIn</a>
+            </address>
         </div>
-    </div>
+    </section>
+
 </main>
 
 <!-- Footer -->

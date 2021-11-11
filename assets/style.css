@@ -1,354 +1,355 @@
-* {
-  box-sizing: border-box;
+:root {
+  --main: #8f7082;
+  --light: rgb(235, 226, 226);
+  --dark: rgb(39, 38, 39);
 }
 
 body {
-  font-family: Arial;
-  margin: 0;
+  background: rgb(85,49,70);
+  background: linear-gradient(350deg, rgba(85,49,70,1) 0%, rgba(143,112,130,1) 44%, rgba(173,131,155,1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0px;
+  padding: 0;
 }
+
+/* --Header-- */
 
 header {
-  padding: 0px;
-  text-align: bottom right;
-  color: #fff;
-  min-width: 50vw;
-  background-color: white;
-display: flex;
-flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+  padding: 15px 1% 15px 0;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--light);
 }
 
-/* Use flex-direction to stack the navbar, sidebar, and body */
+header h1 img {
+  width: 250px;
+  margin-bottom: -2rem;
+  margin-right: -5rem;
+}
+
+header h1 {
+  font-size: 50px;
+  margin: 3.5rem;
+  line-height: 1;
+}
+
+/* banner */
+
+.bannerimage {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  margin: 0px;
+}
+
+.bannerdescription {
+  display: flex;
+  justify-items: flex-end;
+  position: absolute;
+  right: 10px;
+  margin-top: -3.5em;
+  font-size: 1.5em;
+  font-weight: lighter;
+  color: var(--light);
+  background-color: var(--main);
+  padding: 0.8em;
+}
+
+/* --Navbar-- */
 nav {
   display: flex;
-  background-color: rgba(129, 63, 120, 0.8);
-  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
 }
 
-nav a {
-  color: white;
-  padding: 2px 20px;
+/* all button links */
+
+.button{
+  color: var(--light);
   text-decoration: none;
-  text-align: center;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 16px;
+  background: #9D798E;
+  box-shadow:  7px 7px 14px #856779,
+  -7px -7px 14px #b58ba3;
+  border-width: 1px;
+  border-width: 1px;
+  border-color: var(--main);
+  margin: 30px;
 }
 
- /* Make the sidebar stack below the body */
+.button:hover {
+  border-radius: 16px;
+  background: #8f7082;
+  box-shadow:  7px 7px 14px #b38ca3,
+  -7px -7px 14px #e0c3d4;
+  border-width: 1px;
+  border-color: var(--light);
+}
+
+.button:focus {
+  color: var(--dark);
+}
+
+/* main */
 
 main {
-  display: flex;
-  flex-direction: column;
-}
-header img {
-  width: 1440px;
-  height: 400px;
-  object-fit: cover;
+  margin-top: 20px;
+  margin-bottom: 35px;
 }
 
-footer {
-  display:flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 15px;
-  text-align: center;
-  background: rgba(129, 63, 120, 0.8);
-  color: #fff;
-  list-style-type: none;
-}
-
-/* */
-
-a.pages
-{
-    position: relative;
-}
-a.pages::before {
-  content: "";
-  position: absolute;
-  width: 75%;
-  height: 2px;
-  bottom: -2px;
-  left: 15%;
-  background-color: white;
-  visibility: visible;
-  transition: all 0.3s ease-in-out;
-}
-a.pages:hover:before {
-  visibility: visible;
-  transform: scaleX(1);
-}
-.card {
-  /*display: flex;*/
-  flex-wrap: wrap;
-  padding: 0px;
-  flex: 0 0 400px;
-  justify-content: center;
-  margin: 10px;
-  flex-grow: 1;
-  opacity: 0.7;
-  position: relative;
-  text-align: center;
-}
-.card:hover {
-  opacity: 1;
-  cursor: pointer;
-}
-.card-2 {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0px;
-  margin: 10px;
-  width: 500px;
-  opacity: 0.7;
-  flex: 0 4 200px;
-  position: relative;
-  text-align: center;
-}
-.card-2:hover {
-  opacity: 1;
-  cursor: pointer;
-}
-.row {
-  display: flex;
-  flex-flow: row wrap;
-  padding: 10px;
-  width: 75vw;
-}
-.row-2 {
-  object-fit: fill;
-  padding: 10px;
-  width: 75vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.box{
-  position: relative;
-  display: inline-block; /* Make the width of box same as image */
-}
-.box .subtitle{
-  position: absolute;
-  z-index: 999;
-  margin: 0 auto;
-  left: 50%;
-  right: 0;        
-  text-align: center;
-  top: 80%; /* Adjust this value to move the positioned div up and down */
-  background: rgba(129, 63, 120, 0.8);
-  font-family: Arial,sans-serif;
-  color: #fff;
-  width: 35%; /* Set the width of the positioned div */
-}
-.card .text{
-  position: absolute;
-  font-size: 25px;
-  z-index: 999;
-  margin: 0 auto;
-  left: 0;
-  right: 100%;        
-  align-items: center;
-  /*bottom: 18%;*/
-  top: 75%; /* Adjust this value to move the positioned div up and down */
-  background: rgba(129, 63, 120, 0.8);
-  font-family: Arial,sans-serif;
-  color: #fff;
-  width: 20%; /* Set the width of the positioned div */
-}
-/* .card-2{
-  position: relative;
+.mainheader {
   display: inline-block;
-  width: 500px; 
-} */
-.card-2 .text{
-  position: absolute;
-  font-size: 17px;
-  z-index: 999;
-  margin: 0 auto;
-  left: 0;
-  right: 100%;        
-  text-align: center;
-  /*bottom: 15%;*/
-  top: 60%; /* Adjust this value to move the positioned div up and down */
-  background: rgba(129, 63, 120, 0.8);
-  font-family: Arial,sans-serif;
-  color: #fff;
-  width: 30%; /* Set the width of the positioned div */
-}
-.title {
   display: flex;
-  flex-direction: row-reverse;
-  width: 25vw;
-  color: rgba(129, 63, 120, 0.8);
-  font-size: 50px;
-}
-.title-2 {
-  display: flex;
-  flex-direction: row-reverse;
-  width: 25vw;
-  color: rgba(129, 63, 120, 0.8);
-  font-size: 30px;
-  margin: 2px;
-  font-size: 50px;
-}
-.column.row {
-  display: flex;
-  flex-flow: row wrap;
-  padding: 10px;
-  width: 75vw;
-}
-.column {
-  display: flex;
-  padding-top: 5px;
-  padding-bottom: 5px;
-
-}
-.column .title {
-  display: flex;
-  align-items: flex-start;
-}
-#about.column {
-  display: flex;
-  flex-direction: column;
-}
-#column {
-  display: flex;
-}
-.subtitle {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-  text-size-adjust: 20px;
-}
-.header-box {
-  display: flex;
-  align-items: center;
-  padding: 15px;
-  margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background-color: rgba(221, 182, 216, 0.8);
-  border: 10px black;
-  border-width: 10px;
-}
-.text {
-  color: rgba(94, 45, 87, 0.8);
-  font-size: 30px;
-}
-nav ul {
-  display: flex;
-  align-items: flex-end;
-  list-style: none;
-}
-.box{
-  opacity: 85%;
-}
-.vertical {
-  border-left: 4px solid rgba(129, 63, 120, 0.8);
-  height: 110px;
-  position:absolute;
-  left: 25%;
-}
-.vertical-p {
-  border-left: 4px solid rgba(129, 63, 120, 0.8);
-  height: 1200px;
-  position:absolute;
-  left: 25%;
-}
-.table {
-	display: table;   /* Allow the centering to work */
-	margin: 0 auto;
-  border-left: rgba(129, 63, 120, 0.8);
-  border-width: 2px;
-}
-a { 
-  text-decoration: none; 
-  color: rgba(129, 63, 120, 0.8);
-  font-size: larger;
-}
-h3{
-  width: 10vw;
-}
-ul#horizontal-list {
-	min-width: 696px;
-  width: 60vw;
-	list-style: none;
-	padding-top: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-ul#horizontal-list li {
-  display: inline;
-}
-a.list
-{
-    position: relative;
+  justify-content: flex-end;
+  padding-right: 20px;
+  color: var(--light);
+  border-right: 7px solid;
+  border-color: var(--dark);
+  font-size: 1.5em;
+  font-weight: 300;
 }
 
-a.list:before {
-  content: "";
-  position: absolute;
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#portfolio {
+  margin-bottom: 20px;
+}
+
+#contact {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+section > h2 {
+  flex: 1 1 30%;
+}
+
+section > * {
+  flex: 1 1 70%;
+}
+
+.aboutmetext {
+  margin-right: 2.5em;
+  margin-left: 2.5em;
+}
+
+.portfoliocards {
   width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(129, 63, 120, 0.8);
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: all 0.3s ease-in-out;
-}
-a.list:hover:before {
-  visibility: visible;
-  transform: scaleX(1);
-}
-.card p {
-  text-align: center;
 }
 
-.card img {
-  width: 100%;
-  border-style: solid;
-  border-width: 4px;
-  border-color: rgba(129, 63, 120, 0.8);
+
+.bigcardimage:hover {
+  border-radius: 35px;
+  background: #8f7082;
+  box-shadow:  10px 10px 25px #83777e,
+  -10px -10px 25px #c2bbbb;
+  opacity: 0.7;
 }
-.card-2 img {
-  width:  500px;
-  /*height: 200px;*/
+
+.smallcardimage:hover {
+  border-radius: 35px;
+  background: #8f7082;
+  box-shadow:  10px 10px 25px #83777e,
+  -10px -10px 25px #c2bbbb;
+  opacity: 0.7;
+}
+
+.labelheading {
+  width: 15rem;
+  height: 5.5rem;
+  background-color: var(--main);
+  margin: 5.5rem 0 0 25px;
+  position: absolute;
+  padding: 20px;
+  border-radius: 0 9px 9px 0;
+  color: var(--light);
+  font-size: 1.5rem;
+  z-index: 1;
+  display: inline-block;
+}
+
+.labeldescription {
+  width: 12rem;
+  height: 5.5rem;
+  margin: 7.25rem 0 0 25px;
+  position: absolute;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: var(--light);
+  opacity: 1;
+  z-index: 1;
+  display: inline-block;
+}
+
+.bigcardimage {
+  border-radius: 35px;
+  background: #8f7082;
+  box-shadow:  10px 10px 25px #7a5f6f,
+  -10px -10px 25px #a48196;
+  margin-left: 25px;
+  display: flex;
+  justify-content: center;
+  height: 250px;
+  width: 90%;
   object-fit: cover;
-  border-style: solid;
-  border-width: 4px;
-  border-color: rgba(129, 63, 120, 0.8);
+  position: relative;
+  margin-bottom: 30px;
 }
 
-a.website
-{
-    position: relative;
-    list-style-type: none;
-    color: rgba(68, 30, 63, 0.8);
-}
-a.website:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  list-style: none;
-  background-color: rgba(129, 63, 120, 0.8);
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: all 0.3s ease-in-out;
-}
-a.website:hover:before {
-  visibility: visible;
-  transform: scaleX(1);
+.smallcardimage {
+  border-radius: 35px;
+  background: #8f7082;
+  box-shadow:  10px 10px 25px #7a5f6f,
+  -10px -10px 25px #a48196;
+  margin-left: 25px;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  width: 43.5%;
+  object-fit: cover;
+  position: relative;
+  margin-bottom: 30px;
+  display: inline-block;
 }
 
-/* 
-What does the flex-direction property define?
-What is it doing here? 
-TODO: Write your answer here 
-*/
-/* @media screen and (max-width: 768px) {
-  main,
-  nav {
-    flex-direction: column;
+#project4label {
+  display:flex;
+}
+
+#project4description {
+  display:flex;
+}
+
+/* address */
+
+address {
+  margin: 5px;
+  color: var(--light);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+address > a{
+  color: var(--light);
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 16px;
+  background: #6E4C5F;
+  box-shadow:  7px 7px 20px #634758,
+  -7px -7px 20px #8B687C;
+  border-width: 1px;
+  border-color: var(--main);
+  margin: 30px;
+}
+
+address > a:hover {
+  border-radius: 16px;
+  background: #8f7082;
+  box-shadow:  7px 7px 14px #7a5f6f,
+  -7px -7px 14px #a48196;
+  border-width: 1px;
+  border-color: var(--light);
+}
+
+address > a:focus {
+  color: var(--dark);
+}
+
+/* responsive styling */
+
+@media screen and (max-width: 1099px) {
+  header {
+    padding: 0 0 5px 0;
+    text-align:center;
+    justify-content: center;
   }
-} */
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0 0 5px 0;
+    text-align:center;
+    justify-content: center;
+  }
+
+  .labelheading {
+    width: 11rem;
+    height: 5rem;
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+
+  .labeldescription {
+    width: 11rem;
+    height: 5rem;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  header h1 img {
+    margin-bottom: -2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    padding: 0 0 5px 0;
+    text-align:center;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .bannerdescription {
+    margin-top: -5em;
+  }
+
+  .bigcardimage {
+    width: 85%;
+  }
+
+  .smallcardimage {
+    width: 85%;
+  }
+
+  .labelheading {
+    width: 9rem;
+    height: 4rem;
+    padding: 6px;
+    font-size: 1rem;
+    display: flex;
+  }
+
+  .labeldescription {
+    width: 8rem;
+    height: 4rem;
+    padding: 8px;
+    font-size: 1rem;
+    display: flex;
+  }
+
+  header h1 img {
+    margin-bottom: -1rem;
+  }
+}
