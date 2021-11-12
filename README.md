@@ -2,7 +2,7 @@
 ## :) 
 
 ### Portfolio Demo
-![Category Demo]()
+![Category Demo](https://github.com/nicoledodge/Portfolio-Page/blob/main/assets/images/portfolio%20demo.gif?raw=true)
 
 Created a Portfolio page based on past portfolio work with links to my personal website and portfolio.
 
